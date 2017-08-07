@@ -42,9 +42,12 @@ a {
 
 strong{
     color:darkslategray;
+
+    
 }
 .container {
     font-family: 'Roboto Slab', serif;
+
 }
 
 #left {
@@ -111,6 +114,8 @@ flow.normal {
 td {
     width: 5px;
     padding-right: 0.8em;
+    
+   
 }
 
 td.row {
@@ -143,6 +148,8 @@ td.content {
     padding: 0em 1.5em 0em 1.5em;
     width: 200px;
     line-height: 1.4;
+    
+    
 }
 
 td.content:hover {
@@ -180,17 +187,17 @@ ul li
 .button {
     background-color: transparent;
     border-radius: 4px;
-    border: 1px solid darkcyan;
+    border: 1px solid lightgray;
     text-align: center;
-    padding: 5px;
-    width: 100px;
+    padding: 4px 0px 3px 0px;
+    width: 65px;
     transition: all 0s;
     cursor: pointer;
     margin: 0px;
-    font-size: 0.8em;
-    line-height: 1.4;
+    font-size: 0.5em;
+    line-height: 0.8;
     font-family: Abel;
-    color: black;
+    color: lightgray;
 }
 
 td.content:hover button {
@@ -198,13 +205,13 @@ td.content:hover button {
     border-radius: 4px;
     border: 1px solid white;
     text-align: center;
-    padding: 5px;
-    width: 100px;
+    padding: 4px 0px 3px 0px;
+    width: 65px;
     transition: all 0s;
     cursor: pointer;
     margin: 0px;
-    font-size: 0.8em;
-    line-height: 1.4;
+    font-size: 0.5em;
+    line-height: 0.8;
     font-family: Abel;
     color: white;
 }
@@ -228,7 +235,7 @@ td.content:hover button {
 
 
 .button:hover span {
-    padding-right: 10px;
+    padding-right: 8px;
 }
 
 .button:hover span:after {
