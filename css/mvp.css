@@ -87,6 +87,7 @@ weak {
 
 .container {
     font-family: 'Roboto Slab', serif;
+    width: 100%;
 }
 
 .container-front {
@@ -103,11 +104,12 @@ weak {
 
 #middle {
     font-family: 'Roboto Slab', serif;
-    padding: 0px 0px 0px 0px;
+    padding: 0;
     float: left;
-    margin-left: 10%;
-    margin-right: 10%;
+width:80%;
+    left:10%;
     background-color: ;
+    position: relative;
 }
 
 #right {
@@ -123,6 +125,7 @@ weak {
     border-collapse: separate;
     border-spacing: 0em 2.2em;
     margin: -3.2em 0em -0.8em 0em;
+    width:100%;
 }
 
 th {
@@ -171,7 +174,7 @@ td.row {
 td.content1 {
     background-color: none;
     padding-right: 2%;
-    width: 25%;
+    width: 20%;
     text-align: right;
     color: darkgray;
 }
