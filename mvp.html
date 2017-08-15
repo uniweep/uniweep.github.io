@@ -8,14 +8,44 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/mvp.css">
+   
     <link href="https://fonts.googleapis.com/css?family=Abel|Noto+Sans|Roboto+Slab|Slabo+27px" rel="stylesheet">
+    <link href="css/alertify.core.css" rel="stylesheet">
+    <link href="css/alertify.default.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/mvp.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/alertify.min.js"></script>
     <title>Work with MVP</title>
 </head>
 
 <body>
     <div class="bg bg-blur"></div>
-    
+    <script>
+        $j = jQuery.noConflict()
+        $j(function () {
+            $j('#alert1-compare').click(function () {
+                alertify.alert('解决方案征集：这里应该放一张图，但我现在写不出来T_T，因为用的是 alert，还望有识之士提供插入图片的办法！在此之前请访问图片链接：https://uniweep.github.io/img/compare_Foton.jpg');
+            });
+            $j('#alert2-nas').click(function () {
+                alertify.alert('Network Attached Storage（网络连接存储设备）简称 NAS，是能通过网络进行远程访问的存储设备，不必连接实体线路即可浏览、搜寻、下载。在 ArcheX，根据相片、视频两种档案类型，又分别称为 Photobase 与 Videobase。');
+            });
+            $j('#alert3-photostation').click(function () {
+                alertify.alert('Network Attached Storage（网络连接存储设备）简称 NAS，是能通过网络进行远程访问的存储设备，不必连接实体线路即可浏览、搜寻、下载。在 ArcheX，根据相片、视频两种档案类型，又分别称为 Photobase 与 Videobase。');
+            });
+            $j('#alert4-dynamics').click(function () {
+                alertify.alert('MVP Dynamic 是 MVP 内部的工作量检视机制。当团队收到新需求后，我们会参考每个人参与的项目、任务或机制，合理分配工作量。');
+            });
+            $j('#alert5-formula').click(function () {
+                alertify.alert('FORMULA 是 MVP 内部在接项目之前的核心评估工具。它由 MVP 成员达成共识的若干参数及其比重组成，旨在有效平衡作品的品质与产出效益等多方考量。通常在较大的项目需求出现时，作为其潜在价值评估的重要依据。这是一个仍在完善发展的工具。');
+            });
+            $j('#alert6-sow').click(function () {
+                alertify.alert('SOW 是 Statement of Work（工作说明）的简称。目前用于和客户说明工作内容、项目时程、交付物和工时费用的项目文件，具体内容请 PM 参见 SOW 模板。通常双方在项目需求、工作内容、时程和交付物协商达成一致后，这时可进入 SOW 撰写阶段。客户审核通过后，须有书面同意证明（例如，邮件回复），ArcheX 项目组才可进行费用支出。因不同项目特殊性，有部分项目走不同流程，请依据项目实际状况进行。');
+            });
+            $j('#alert7-briefingb').click(function () {
+                alertify.alert('Briefing B 文档是 MVP 针对 Briefing A 提出的需求与想法，经过团队的分析、疏理、讨论与评估，正式回覆需求方的官方文件。其中会明确列出参与人力、时程规划、场地、视觉风格等制作细节。通常 MVP 会与需求方针对 Briefing B 进行多次沟通，以产出最终版的制作计划表。');
+            });
+        })
+    </script>
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -39,7 +69,11 @@
                     <td align="left" class="content1">
                         <div class="title"><strong>Generic Need</strong></div>
                         <div class="subtitle">to quickly find photos or video clips of current events at AX</div>
-                        <button class="button_strong" style="vertical-align:middle"><span>compare</span></button>
+                        <button class="button_strong" style="vertical-align:middle" id="alert1-compare"><span>compare</span></button>
+                        <!--
+                          <div class="jsg">
+        <input class="btn" type="button" value="訊息框" id="alert-btn"></div>
+-->
                     </td>
                     <th align="left"></th>
                     <td align="left">
@@ -49,8 +83,8 @@
                             <!--<strong>|</strong<weak>></weak>-->
                             <a href="https://www.dropbox.com/home/-%20MVP%20PhotoSelect" style="text-decoration:none;"><weak>></weak>PhotoSelect</a><p></p><a href="https://www.dropbox.com/home/-%20MVP%20VideoSelect" style="text-decoration:none;"><weak>></weak>VideoSelect</a></h3> </td>
                     <td align="left" class="content" colspan="8">help yourself via <strong>NAS</strong>&nbsp;
-                        <button class="button" style="vertical-align:middle"><span>what's this?</span></button>
-                        <h3><a href="http://10.39.1.68" style="text-decoration:none;"><weak>></weak>Photo Station</a><a href="http://10.39.1.68" style="text-decoration:none;"><p></p><weak>></weak>how to use</a></h3> </td>
+                        <button class="button" style="vertical-align:middle" id="alert2-nas"><span>what's this?</span></button>
+                        <h3><a href="http://10.39.1.68" style="text-decoration:none;"><weak>></weak>Photo Station</a><a href="http://10.39.1.68" style="text-decoration:none" id="alert3-photostation"><p></p><weak>></weak>how to use</a></h3> </td>
                 </tr>
                 <tr class="normal">
                     <td align="left" class="content1">
@@ -67,7 +101,8 @@
                     <th align="left"></th>
                     <td align="left">
                         <h5>→</h5></td>
-                    <td align="left" class="content"><strong>MVP Dynamics</strong>&nbsp;<button class="button" style="vertical-align:middle"><span>what's this?</span></button>
+                    <td align="left" class="content"><strong>MVP Dynamics</strong>&nbsp;
+                        <button class="button" style="vertical-align:middle" id="alert4-dynamics"><span>what's this?</span></button>
                     </td>
                     <th align="left" class="space"></th>
                     <th align="left"></th>
@@ -97,13 +132,15 @@
                     <th align="left" rowspan="2"></th>
                     <td align="left" rowspan="2">
                         <h5>→</h5></td>
-                    <td align="left" class="content" rowspan="2"><strong>FORMULA</strong>&nbsp;<button class="button" style="vertical-align:middle"><span>what's this?</span></button>
+                    <td align="left" class="content" rowspan="2"><strong>FORMULA</strong>&nbsp;
+                        <button class="button" style="vertical-align:middle" id="alert5-formula"><span>what's this?</span></button>
                     </td>
                     <th align="left" class="space"></th>
                     <th align="left"></th>
                     <td align="left">
                         <h5>→</h5></td>
-                    <td align="left" class="content"><strong>S.O.W.</strong>&nbsp;<button class="button" style="vertical-align:middle"><span>what's this?</span></button>
+                    <td align="left" class="content"><strong>S.O.W.</strong>&nbsp;
+                        <button class="button" style="vertical-align:middle" id="alert6-sow"><span>what's this?</span></button>
                     </td>
                 </tr>
                 <tr class="normal">
@@ -116,7 +153,7 @@
                     <td align="left">
                         <h5>→</h5></td>
                     <td align="left" class="content"><strong>Briefing B</strong>&nbsp;
-                        <button class="button" style="vertical-align:middle"><span>what's this?</span></button>
+                        <button class="button" style="vertical-align:middle" id="alert7-briefingb"><span>what's this?</span></button>
                         <h3><a href="download/MVP%20Video%20Production%20Briefing%20Form%20v2.1%20A.pdf" style="text-decoration:none;"><weak>></weak>sample</a></h3></td>
                 </tr>
             </table>
@@ -124,20 +161,24 @@
                 <H1>TEAM</H1> </div>
             <table id="team">
                 <tr class="normal">
-                    
                     <ul align="left">
                         <li><img src="img/profile_wl_b200.jpg" alt="Lan Wu" id="">
-                         <div class="title">Lan</div>
+                            <div class="title">Lan</div>
                             <h5>摄影 音乐 视频<br />lan.wu@archex.co</h5></li>
-                        <li><img src="img/profile_ak_b200.jpg" alt="Ark Chen" id=""><div class="title">Ark</div>
+                        <li><img src="img/profile_ak_b200.jpg" alt="Ark Chen" id="">
+                            <div class="title">Ark</div>
                             <h5>工业设计 视频 作曲<br />ark.chen@archex.co</h5></li>
-                        <li><img src="img/profile_zq_b200.jpg" alt="Ziqian Liu" id=""><div class="title">Ziqian</div>
+                        <li><img src="img/profile_zq_b200.jpg" alt="Ziqian Liu" id="">
+                            <div class="title">Ziqian</div>
                             <h5>插画 动画 交互设计<br />ziqian.liu@archex.co</h5></li>
-                        <li><img src="img/profile_iv_b200.jpg" alt="Ivy Fan" id=""><div class="title">Ivy</div>
+                        <li><img src="img/profile_iv_b200.jpg" alt="Ivy Fan" id="">
+                            <div class="title">Ivy</div>
                             <h5>纪录片 制片 策展<br />ivy.fan@archex.co</h5></li>
-                        <li><img src="img/profile_sc_b200.jpg" alt="Shooca Zhang" id=""><div class="title">Shooca</div>
+                        <li><img src="img/profile_sc_b200.jpg" alt="Shooca Zhang" id="">
+                            <div class="title">Shooca</div>
                             <h5>电影 视觉设计 创意<br />shooca.zhang@archex.co</h5></li>
-                        <li><img src="img/profile_tm_b200.jpg" alt="Tim Lu" id=""><div class="title">Tim</div>
+                        <li><img src="img/profile_tm_b200.jpg" alt="Tim Lu" id="">
+                            <div class="title">Tim</div>
                             <h5>动画 交互设计 多媒体<br />tim.lu@archex.co</h5></li>
                     </ul>
                 </tr>
@@ -149,32 +190,30 @@
                     <li>
                         <div class="front">
                             <div class="project"><strong>Maya</strong></div>
-                             <div class="">
-                            <iframe src="https://www.youtube.com/embed/-vlu7asHhX0?rel=0?ecver=2"  frameborder="0" style="position:relative;width:85%" allowfullscreen></iframe>
-                        </div>
+                            <div class="">
+                                <iframe src="https://www.youtube.com/embed/-vlu7asHhX0?rel=0?ecver=2" frameborder="0" style="position:relative;width:85%" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </li>
                     <li>
                         <div class="front">
                             <div class="project"><strong>MoBites</strong></div>
-                             <div class="">
-                            <iframe src="https://www.youtube.com/embed/ghSLp97eJwQ?rel=0?ecver=2"  frameborder="0" style="position:relative;width:85%" allowfullscreen></iframe>
-                        </div>
+                            <div class="">
+                                <iframe src="https://www.youtube.com/embed/ghSLp97eJwQ?rel=0?ecver=2" frameborder="0" style="position:relative;width:85%" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </li>
                     <li>
                         <div class="front">
                             <div class="project"><strong>Just Food Fun</strong></div>
-                             <div class="">
-                            <iframe src="https://www.youtube.com/embed/XTbMXb2qnHA?rel=0?ecver=2"  frameborder="0" style="position:relative;width:85%;" allowfullscreen></iframe>
-                        </div>
+                            <div class="">
+                                <iframe src="https://www.youtube.com/embed/XTbMXb2qnHA?rel=0?ecver=2" frameborder="0" style="position:relative;width:85%;" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </li>
                 </ul>
-                
             </div>
         </div>
-        
         <div id="right"></div>
     </div>
 </body>
