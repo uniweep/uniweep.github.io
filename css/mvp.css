@@ -578,6 +578,7 @@ li.last-child {
     margin: -2.2em 0em -0.8em 0em;
     width: 100%;
     display:table;
+        table-layout: fixed;
 }
     
     
